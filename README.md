@@ -113,7 +113,7 @@ This is the page where you can register.
 ### Steps
 ```bash
 # Clone the repository
-git clone https://github.com/safi-io/SteganographyMessageHider
+git clone https://github.com/Faizanfarid-Uk/Steganography-Message-Concealment-System
 cd SteganographyMessageHider
 
 # Build and start all services (Flask, MySQL, Redis, Celery)
@@ -233,12 +233,4 @@ SteganographyMessageHider is built for privacy and security:
 
 ---
 
-## Contact
 
-For any queries, please reach out at:
-
-**Email:** [m.safi.ullah@outlook.com](mailto:m.safi.ullah@outlook.com)
-
----
-
-Thank you for exploring!
