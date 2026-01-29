@@ -79,9 +79,7 @@ This process is repeated across many pixels to hide the full message.
 
 ## Interface Previews
 
-### Home Page
-This is the page that welcomes you when you start the application (Steganography Studio).
-![Home Page](visuals/homepage.png)
+
 
 ### Encoding Page
 On this page, you can upload the picture and write the text you want to hide in the image.
