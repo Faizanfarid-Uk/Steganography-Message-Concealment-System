@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steganography Studio</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/index.css') }}"
+    />
+  </head>
+  <body>
+    <!-- Floating top-right buttons -->
+    <div class="top-buttons">
+      <a href="/history" class="btn small">📜 History</a>
+      <a href="/logout" class="btn small danger">🔓 Logout</a>
+    </div>
+
+    <!-- Particle Background -->
+    <div id="particles" class="particles"></div>
+
+    <!-- Main Content -->
+    <main class="container">
+      <header class="header">
+        <h1 class="title">Steganography Studio</h1>
+        <p class="subtitle">Hide secrets in plain sight</p>
+      </header>
+
+      <!-- Icon animation -->
+      <div class="icon-container">
+        <div class="icon">🕵️‍♂️</div>
+      </div>
+
+      <!-- Features Grid -->
+      <section class="features">
+        <div class="feature">
+          <div class="feature-icon">🔐</div>
+          <p class="feature-text">Secure Encoding</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🔍</div>
+          <p class="feature-text">Smart Detection</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">⚡</div>
+          <p class="feature-text">Lightning Fast</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🛡️</div>
+          <p class="feature-text">Military Grade</p>
+        </div>
+      </section>
+
+      <!-- Main Buttons -->
+      <div class="buttons">
+        <a href="/encode" class="btn primary">🔐 Encode Message</a>
+        <a href="/decode" class="btn secondary">🔓 Decode Message</a>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer">
+        Built with passion for digital privacy —
+        <a href="https://github.com/Faizanfarid-Uk" target="_blank">github/Faizanfarid-Uk</a><br />
+        &copy; Faizan Farid. All rights reserved.
+      </footer>
+    </main>
+
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decode Hidden Message</title>
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/decode.css') }}"
+    />
+  </head>
+  <body>
+    <div class="particles"></div>
+    <!-- Particles background -->
+    <!-- Go Back Button -->
+    <!-- Back Button -->
+    <a href="{{ url_for('main.home') }}" class="go-back-btn">
+      <i class="fas fa-arrow-left"></i>
+      <span>Back to Home</span>
+    </a>
+
+    <div class="container">
+      <div class="header">
+        <h1 class="title">Decode Hidden Message</h1>
+        <p class="subtitle">Extract a secret message from an image.</p>
+      </div>
+
+      <div class="form-section">
+        <div class="form-group">
+          <label for="image-upload">Select Encoded Image</label>
+          <input type="file" id="image-upload" accept="image/*" required />
+          <label for="image-upload" class="custom-file-upload">
+            <i class="fas fa-upload"></i>
+            <span>Choose Image File</span>
+          </label>
+          <p id="file-name">No file chosen</p>
+        </div>
+        <button id="decode-btn" class="btn-decode-page">
+          <i class="fas fa-eye"></i> &nbsp; Decode Message
+        </button>
+        <div id="message-box" class="message-box"></div>
+      </div>
+
+      <div class="result-section">
+        <h3>Decoded Message</h3>
+        <div id="decoded-message-output" class="decoded-message-box">
+          <p id="decoded-text-placeholder" class="image-placeholder">
+            Upload an encoded image and click decode to reveal the hidden
+            message.
+          </p>
+        </div>
+        <div id="loading-indicator" class="loading" style="display: none"></div>
+      </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/decode.js') }}"></script>
+  </body>
+</html>
